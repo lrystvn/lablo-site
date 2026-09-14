@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lablo — Learn languages by camera</title>
+<meta name="description" content="Point your camera at anything and learn what it's called. Lablo turns the world around you into your language classroom. 12 languages, no flashcards.">
+<meta property="og:title" content="Lablo — Learn languages by camera">
+<meta property="og:description" content="Point your camera at the world and catch new words as you go. 12 languages. No flashcards.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#3a3230; --surface:#ffffff; --paper:#fdf7f0; --line:#f0e6dc;
+    --muted:#7d736a; --green:#ff6b4a; --greenDk:#e5533a; --greenLt:#ffe4dc;
+    --pop:#ffbe3d; --pop2:#48b085; --blue:#5b9bd5;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Outfit',sans-serif;background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.6;}
+  h1,h2,h3{font-family:'Nunito',sans-serif;font-weight:800;letter-spacing:-0.5px;line-height:1.1;}
+  a{color:var(--green);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:720px;margin:0 auto;padding:0 24px;}
+
+  /* header */
+  header{padding:26px 0;}
+  .logo{display:flex;align-items:center;gap:10px;}
+  .logo svg{flex-shrink:0;}
+  .logo span{font-family:'Nunito',sans-serif;font-size:24px;font-weight:800;}
+
+  /* hero */
+  .hero{text-align:center;padding:48px 0 40px;}
+  .hero h1{font-size:44px;margin-bottom:18px;}
+  .hero .sub{font-size:19px;color:var(--muted);max-width:520px;margin:0 auto 30px;}
+  .hero .tag{display:inline-block;background:var(--greenLt);color:var(--greenDk);font-weight:700;font-size:13px;padding:7px 16px;border-radius:20px;margin-bottom:24px;}
+  .cta{display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:#fff;font-family:'Nunito',sans-serif;font-weight:700;font-size:16px;padding:15px 28px;border-radius:16px;}
+  .cta:hover{text-decoration:none;opacity:0.92;}
+  .cta.soon{background:var(--greenLt);color:var(--greenDk);cursor:default;}
+
+  /* hero image placeholder */
+  .shot{margin:40px auto 0;max-width:280px;aspect-ratio:9/16;background:var(--surface);border:2px dashed var(--line);border-radius:28px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;text-align:center;padding:20px;}
+
+  /* features */
+  .features{padding:50px 0;}
+  .feature{display:flex;gap:18px;align-items:flex-start;margin-bottom:32px;}
+  .feature .icon{width:52px;height:52px;border-radius:16px;background:var(--greenLt);display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;}
+  .feature h3{font-size:19px;margin-bottom:5px;}
+  .feature p{color:var(--muted);font-size:15.5px;}
+
+  /* section heading */
+  .section-h{text-align:center;font-size:30px;margin-bottom:36px;}
+
+  /* footer */
+  footer{border-top:1px solid var(--line);padding:36px 0 48px;text-align:center;color:var(--muted);font-size:14px;}
+  footer .links{margin-bottom:16px;}
+  footer .links a{margin:0 12px;font-weight:600;color:var(--ink);}
+  footer .brand{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;font-family:'Nunito',sans-serif;font-weight:800;font-size:18px;color:var(--ink);}
+
+  @media(max-width:600px){
+    .hero h1{font-size:34px;}
+    .hero .sub{font-size:17px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">
+      <svg width="30" height="30" viewBox="0 0 48 48"><g transform="rotate(-6 24 24)"><path d="M11 9h26v21l-6.5 6.5H11z" fill="#ffbe3d"/><path d="M30.5 36.5v-6.5h6.5z" fill="#e5a92e"/></g></svg>
+      <span>Lablo</span>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="tag">📸 Learn languages by camera</div>
+    <h1>Learning a language should feel like exploring — not studying.</h1>
+    <p class="sub">Point your camera at anything — a coffee cup, a street sign, a café menu — and instantly learn what it's called, with translation, an example sentence, and audio. No flashcards. Just the real world around you.</p>
+    <a href="#" class="cta soon">🍎 Coming soon to the App Store</a>
+    <!-- When live, replace the button above with your real App Store link:
+         <a href="YOUR_APP_STORE_URL" class="cta">Download on the App Store</a> -->
+    <div class="shot">Your hero screenshot goes here<br>(add later)</div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="wrap">
+    <h2 class="section-h">How it works</h2>
+
+    <div class="feature">
+      <div class="icon">📷</div>
+      <div>
+        <h3>Point &amp; scan</h3>
+        <p>Aim your camera at objects around you and tap. Lablo labels each one in the language you're learning.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🗣️</div>
+      <div>
+        <h3>Hear every word</h3>
+        <p>Translations, natural example sentences, and audio pronunciation for everything you catch.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="icon">📖</div>
+      <div>
+        <h3>Build collections</h3>
+        <p>Every word fills your collections — Kitchen, Food &amp; Drink, Around Town, and more. It's a scavenger hunt for vocabulary.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🔥</div>
+      <div>
+        <h3>A nudge every day</h3>
+        <p>A fresh daily challenge keeps things fun and keeps your streak alive. Learn a little, every day.</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🌍</div>
+      <div>
+        <h3>Made for travelers &amp; the curious</h3>
+        <p>12 languages with regional variety. Scan menus and signs abroad, or just learn the words in your own home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">
+      <svg width="22" height="22" viewBox="0 0 48 48"><g transform="rotate(-6 24 24)"><path d="M11 9h26v21l-6.5 6.5H11z" fill="#ffbe3d"/><path d="M30.5 36.5v-6.5h6.5z" fill="#e5a92e"/></g></svg>
+      Lablo
+    </div>
+    <div class="links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </div>
+    <div>Point your camera. Catch a word. Label your world.</div>
+    <div style="margin-top:14px;font-size:13px;">© 2026 Lablo · <a href="mailto:lablo.app@outlook.com" style="color:var(--muted);">lablo.app@outlook.com</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
